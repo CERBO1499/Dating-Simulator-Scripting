@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 146275383837730039}
   - component: {fileID: 146275383837730038}
   - component: {fileID: 146275383837730037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Intimacy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

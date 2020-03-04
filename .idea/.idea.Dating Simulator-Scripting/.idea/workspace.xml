@@ -14,9 +14,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/PoolBubbles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Utilities/SpawnProbability.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Enums/Etrait.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -24,11 +26,13 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Etrait.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Utilities/ProbItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/PoolBubbles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Utilities/SpawnProbability.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/Player/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -79,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583095210370</updated>
       <workItem from="1583095224974" duration="5000" />
-      <workItem from="1583353099434" duration="7053000" />
+      <workItem from="1583353099434" duration="8563000" />
     </task>
     <servers />
   </component>

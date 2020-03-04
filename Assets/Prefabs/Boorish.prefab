@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6242054437858136841}
   - component: {fileID: 6242054437858136842}
   - component: {fileID: 6242054437858136843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boorish
   m_TagString: Untagged
   m_Icon: {fileID: 0}

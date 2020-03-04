@@ -9,5 +9,16 @@ namespace Bubbles
     {
         [SerializeField] private Etrait Trait;
 
+
+        public void Pop()
+        {
+            gameObject.SetActive(false);
+        }
+
+        public void Die()
+        {
+            gameObject.SetActive(false);
+        }
+
     }
 }
