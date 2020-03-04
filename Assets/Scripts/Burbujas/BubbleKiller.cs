@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Prueba1 : MonoBehaviour
+public class BubbleKiller : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
