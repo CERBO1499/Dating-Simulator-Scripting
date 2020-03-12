@@ -1,18 +1,35 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Bubbles;
+using Enums;
 using UnityEngine;
 
 public class BubbleKiller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
         
+        if (other.tag == "Bubble")
+        {
+            Bubble bl = other.gameObject.GetComponent<Bubble>();
+            switch (bl.Trait)
+            {
+                case Etrait.Love:
+                case Etrait.Intelligence:
+                case Etrait.Filrt:
+                    break;
+                default:
+                    break;
+                    
+            }
+            bl.Die(); 
+            
+            
+        }
     }
+    
+    
 }
