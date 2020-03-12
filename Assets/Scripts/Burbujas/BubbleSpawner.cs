@@ -15,6 +15,11 @@ public class BubbleSpawner : MonoBehaviour
 
     [SerializeField] private float timeBetwnspawns=2f;
     private float timer;
+    private float timerIncreases;
+
+    [SerializeField] private float MaxIncreace = 10f;
+    private int countIncreases=0;
+    private int maxIncreases = 10;
 
     [SerializeField] private float xValue;
 
@@ -26,7 +31,7 @@ public class BubbleSpawner : MonoBehaviour
         probabilities = GetComponent<SpawnProbability>();
     }
 
-
+    
     
         
     
@@ -34,6 +39,24 @@ public class BubbleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timerIncreases += Time.deltaTime;
+       
+        if (timerIncreases>=MaxIncreace && countIncreases<maxIncreases )
+        {
+            float tmp;
+            tmp = (timeBetwnspawns * 3) / 100;
+            timeBetwnspawns = timeBetwnspawns - tmp;
+
+            float tmpSpeed;
+            tmpSpeed = (speedBubbles * 3) / 100;
+            speedBubbles = speedBubbles + tmpSpeed;
+            
+            
+            
+            timerIncreases = 0;
+            countIncreases++;
+        }
+      
         timer += Time.deltaTime;
         if (timer >= timeBetwnspawns)
         {

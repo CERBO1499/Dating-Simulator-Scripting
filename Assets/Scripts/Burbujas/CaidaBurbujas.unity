@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bfa2a79bdcab3f429bcd45eee3a1163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Umbral: 0
 --- !u!54 &172528190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -520,6 +521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: xValue
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030975916838085085, guid: 8b683e140e4edea4c8f2c5bf17f5f2df,
+        type: 3}
+      propertyPath: timeBetwnspawns
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b683e140e4edea4c8f2c5bf17f5f2df, type: 3}

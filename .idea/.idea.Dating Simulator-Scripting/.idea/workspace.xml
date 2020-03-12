@@ -32,9 +32,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Utilities/SpawnProbability.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleKiller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" />
       </list>
     </option>
   </component>
