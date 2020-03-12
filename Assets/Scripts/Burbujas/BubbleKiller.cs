@@ -20,13 +20,16 @@ public class BubbleKiller : MonoBehaviour
 
             if (bl.Trait == Etrait.Love || bl.Trait == Etrait.Intelligence || bl.Trait == Etrait.Filrt)
             {
+                print(bl.Trait);
                 countLose++;
+                if (countLose >= Umbral)
+                {
+                    print("Qiotando vida");
+                    //Quite vida
+                }
             }
 
-            if (countLose >= Umbral)
-            {
-                //Quite vida
-            }
+            
             
             bl.Die(); 
             
