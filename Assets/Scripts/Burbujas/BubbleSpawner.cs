@@ -14,8 +14,13 @@ public class BubbleSpawner : MonoBehaviour
 
 
     [SerializeField] private float timeBetwnspawns=2f;
+    [SerializeField] private float timeIncrease = 10f;
     private float timer;
+    private float timerIncreases;
 
+    private int increasesRealice;
+    private int maxIncreases=10;
+    
     [SerializeField] private float xValue;
 
     private int probability;
@@ -35,6 +40,23 @@ public class BubbleSpawner : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+        timerIncreases += Time.deltaTime;
+        
+        if (timerIncreases >= timeIncrease && increasesRealice<maxIncreases)
+        {
+            float tmp = (timeBetwnspawns * 3) / 100;
+            timeBetwnspawns = timeBetwnspawns - tmp;
+
+
+            float tmpSpeed = (speedBubbles * 3) / 100;
+            speedBubbles = speedBubbles + tmpSpeed;
+
+
+
+
+            increasesRealice++;
+            timerIncreases = 0;
+        }
         if (timer >= timeBetwnspawns)
         {
             probability = probabilities.EvaluateProbability();
