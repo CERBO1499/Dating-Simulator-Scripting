@@ -64,8 +64,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95716f7d0839f774d9b9ccf9031ad625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedBubbles: 0.1
   timeBetwnspawns: 2
-  xValue: 10
+  timeIncrease: 10
+  xValue: -2
+  xValue2: 7.5
 --- !u!114 &9030975916838084898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,9 +83,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   References:
   - {fileID: 505301747004146983, guid: b223b4ec1c11d884bbf1d1b9e736eedd, type: 3}
-  - {fileID: 8499198152070800412, guid: f6542f0d2efbd424e94e570188ab181d, type: 3}
-  - {fileID: 3325992784398457523, guid: c6aa75400def822448f5e40d79a3039c, type: 3}
-  - {fileID: 146275383837730036, guid: d20f29c9bdc80e64387e45eba494fa2f, type: 3}
-  - {fileID: 4647605012883315299, guid: 75bfa5b2b8e35e64f912a7063f197cda, type: 3}
-  - {fileID: 6242054437858136852, guid: 92d5f2fd348f4cc49a025962d3898c6a, type: 3}
   starSize: 20

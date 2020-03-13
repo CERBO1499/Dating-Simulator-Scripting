@@ -10,6 +10,16 @@ public class BubbleKiller : MonoBehaviour
 
     private int countLose;
     [SerializeField] private int Umbral;
+    private ParticleSystem parSys;
+    private AudioSource aud;
+    private void Awake()
+    {
+        parSys = GetComponentInChildren<ParticleSystem>();
+        aud = GetComponent<AudioSource>();
+    }
+    
+    
+    
     private void OnTriggerEnter(Collider other)
     {
         
@@ -24,13 +34,12 @@ public class BubbleKiller : MonoBehaviour
                 countLose++;
                 if (countLose >= Umbral)
                 {
+                    parSys.Play();
                     print("Qiotando vida");
                     //Quite vida
                 }
             }
 
-            
-            
             bl.Die(); 
             
             

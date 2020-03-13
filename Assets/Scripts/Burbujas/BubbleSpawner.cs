@@ -22,6 +22,7 @@ public class BubbleSpawner : MonoBehaviour
     private int maxIncreases=10;
     
     [SerializeField] private float xValue;
+    [SerializeField] private float xValue2;
 
     private int probability;
 
@@ -93,7 +94,8 @@ public class BubbleSpawner : MonoBehaviour
         }
         refer.GetComponent<Bubble>().Begin(trait,speedBubbles);
         
-        refer.transform.position = transform.position + transform.right * Random.Range(-xValue, xValue);
+        refer.transform.position = transform.position + transform.right * Random.Range(xValue, xValue2);
+        refer.GetComponent<Renderer>().enabled = true;
         refer.SetActive(true);
     }
 }
