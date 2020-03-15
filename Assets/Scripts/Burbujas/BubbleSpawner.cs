@@ -97,5 +97,7 @@ public class BubbleSpawner : MonoBehaviour
         refer.transform.position = transform.position + transform.right * Random.Range(xValue, xValue2);
         refer.GetComponent<Renderer>().enabled = true;
         refer.SetActive(true);
+
+        //Debug.Log(trait);
     }
 }

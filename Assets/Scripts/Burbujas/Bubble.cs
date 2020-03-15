@@ -86,6 +86,8 @@ namespace Bubbles
 
                     break;
             }
+
+            Debug.Log(rndColor.material.color);
         }
         public void Pop()
         {
