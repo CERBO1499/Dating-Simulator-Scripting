@@ -19,6 +19,9 @@ namespace Bubbles
         [SerializeField] private float delayPop;
         private Renderer rndColor;
 
+        public delegate void Result();
+        public static event Result InBubblePop;
+
 
         private void Awake()
         {
@@ -92,6 +95,8 @@ namespace Bubbles
         public void Pop()
         {
             StartCoroutine(popDelay());
+            //var InBubblePop = 
+            InBubblePop?.Invoke();
         }
 
         public void Die()
