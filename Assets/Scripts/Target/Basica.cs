@@ -15,13 +15,6 @@ public class Basica : Target, IBasicaInter
         base.Begin(e, i, p, d, h);
     }
 
-    protected override void AssignTraits()
-    {
-        Preffered = traits.preffered;
-        Disliked = traits.disliked;
-        Hated = traits.hated;
-    }
-
     public Etrait Preffered { get; set; }
     public Etrait Disliked { get; set; }
     public Etrait Hated { get; set; }

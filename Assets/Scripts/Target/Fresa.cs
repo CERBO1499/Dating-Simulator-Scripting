@@ -20,10 +20,4 @@ public class Fresa : Target, IFresaInter
 
     public Etrait Preffered { get; set; }
     public Etrait Disliked { get; set; }
-
-    protected override void AssignTraits()
-    {
-        Preffered = traits.preffered;
-        Disliked = traits.disliked;
-    }
 }

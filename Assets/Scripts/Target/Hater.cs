@@ -15,10 +15,6 @@ public class Hater : Target, IHaterInter
         base.Begin(e, i, p, d, h);
     }
 
-    protected override void AssignTraits()
-    {
-        Hated = traits.hated;
-    }
-
     public Etrait Hated { get; set; }
+
 }
