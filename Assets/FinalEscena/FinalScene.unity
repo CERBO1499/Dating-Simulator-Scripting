@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 200765894}
   - component: {fileID: 200765893}
   m_Layer: 5
-  m_Name: PUNTAJE ACUMULADO
+  m_Name: 'PUNTAJE '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5802,7 +5802,7 @@ GameObject:
   - component: {fileID: 1567454702}
   - component: {fileID: 1567454701}
   m_Layer: 5
-  m_Name: NECESITAS
+  m_Name: PARA GANAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6405,6 +6405,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23961a04cc5d6e344ad79ee968519782, type: 3}
+--- !u!1 &6674334981665047275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6674334982277330887, guid: 23961a04cc5d6e344ad79ee968519782,
+    type: 3}
+  m_PrefabInstance: {fileID: 6674334981665047274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6674334981665047277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674334981665047275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f346d01e6d9375741bfc3c998e74aa78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntaje: {fileID: 200765893}
+  puntajeGanar: {fileID: 1567454701}
+  affection: {fileID: 1541859031}
+  _puntaje: 4
+  _puntajeGanar: 0
+  _affection: 0
+  "adici\xF3n": 0
 --- !u!1001 &9030975917742331997
 PrefabInstance:
   m_ObjectHideFlags: 0
