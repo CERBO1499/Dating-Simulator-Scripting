@@ -13,5 +13,12 @@ namespace Enums
         Afecction,
         Boorish
     }
+
+    public enum EChicks
+    {
+        Fresa,
+        Basica,
+        Toxica
+    }
 }
 

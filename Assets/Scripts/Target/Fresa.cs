@@ -6,8 +6,6 @@ using Enums;
 
 public class Fresa : Target, IFresaInter
 {
-    
-
     protected override void Begin(float e, float i)
     {
         base.Begin(e, i);

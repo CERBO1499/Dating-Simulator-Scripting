@@ -11,28 +11,39 @@ public abstract class Target : MonoBehaviour
 
     [SerializeField] protected float interest;
 
-    [SerializeField]
-    protected TargetTraits traits;
+    [SerializeField] protected TargetTraits traits;
     //private EChick chick;
 
-    public float Interest { get => interest; private set { CheckLimits(value, 0, expectation); } }
-    public float Expectation { get => expectation; }
-
+    public float Interest { get => interest; 
+        private set {
+            float i = value;
+            Debug.Log("Entra: " + i);
+            interest = CheckLimits(i, minI, maxI);
+            Debug.Log("Sale: " + interest);
+        } 
+    }
+    public float Expectation { get => expectation; 
+        private set {
+            float e = value;
+            Debug.Log("Entra E: " + e);
+            expectation = CheckLimits(value, minE, maxE);
+            Debug.Log("Sale E: " + e);
+        } 
+    }
     private void Awake()
     {
-        Begin(1, 10);
+        Begin(5, 1000);
     }
 
     protected virtual void Begin(float e, float i)
     {
-        expectation = CheckLimits(e, minE, maxE);
-        Interest = CheckLimits(i, minI, maxI);
+        Expectation = e;
+        Interest = i;
 
         traits.preffered = traits.RandomTrait();
         traits.disliked = traits.RandomTrait();
         traits.hated = traits.RandomTrait();
 
-        //AssignLimits();
         AssignTraits();
 
         ShowInterest();
@@ -40,7 +51,7 @@ public abstract class Target : MonoBehaviour
     protected virtual void Begin(float e, float i, Etrait pref, Etrait dis, Etrait hate)
     {
         expectation = CheckLimits(e, minE, maxE);
-        Interest = CheckLimits(i, minI, maxI);
+        interest = CheckLimits(i, minI, maxI);
 
         traits.preffered = pref;
         traits.disliked = dis;
@@ -65,7 +76,7 @@ public abstract class Target : MonoBehaviour
 
     private void ShowInterest()
     {
-        UIMan.Instance.ShowInterest(interest);
+        UIMan.Instance.ShowInterest(Interest);
     }
 
     public void Win()
@@ -79,7 +90,7 @@ public abstract class Target : MonoBehaviour
 
     private float CheckLimits(float val, float min, float max)
     {
-        return (val > max ? max : (val < min ? min : val));
+        return (val > max) ? max : (val < min) ? min : val;
     }
 
 
