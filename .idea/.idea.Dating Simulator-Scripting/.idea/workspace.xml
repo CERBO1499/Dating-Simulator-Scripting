@@ -12,18 +12,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< HEAD
     <setting file="file://E:/PROGRAMACION GRAFICA/Vfx scene/Assets/Carlos/Scripts/Espiral2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/PROGRAMACION GRAFICA/SEGUNDA PARTE VFX CARLOS(CLASES)/Assets/Scenes/Scripts/ControlRocas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://E:/PROGRAMACION GRAFICA/Vfx scene/Assets/Carlos/Scripts/ControlLuz.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Utilities/SpawnProbability.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target/Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target/Fresa.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Utilities/SpawnProbability.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target/TargetInter.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Target
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleKiller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/PoolBubbles.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< HEAD
     <setting file="file://E:/PROGRAMACION GRAFICA/Vfx scene/Assets/Carlos/Scripts/Gravedad.cs" root0="SKIP_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Target/Basica.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Target
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Burbujas/Enums/Etrait.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://E:/PROGRAMACION GRAFICA/Vfx scene/Assets/Carlos/Scripts/WomenCharacter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -40,6 +52,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/Bubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleKiller.cs" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/Burbujas/BubbleSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Target/TargetTrait.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Target/TargetInter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Target/Target.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Target/Fresa.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Target/Basica.cs" />
+>>>>>>> Target
       </list>
     </option>
   </component>
@@ -93,7 +114,11 @@
       <workItem from="1583353099434" duration="8563000" />
       <workItem from="1583605677684" duration="2327000" />
       <workItem from="1583975274909" duration="11123000" />
+<<<<<<< HEAD
       <workItem from="1584049619112" duration="5657000" />
+=======
+      <workItem from="1584022423756" duration="1065000" />
+>>>>>>> Target
     </task>
     <servers />
   </component>
