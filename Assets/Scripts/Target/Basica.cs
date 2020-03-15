@@ -5,6 +5,17 @@ using Enums;
 
 public class Basica : Target, IBasicaInter
 {
+    /*
+    private void Awake()
+    {
+        minE = 70;
+        maxE = 100;
+
+        minI = 55;
+        maxI = 80;
+    }
+    */
+
     protected override void Begin(float e, float i)
     {
         base.Begin(e, i);

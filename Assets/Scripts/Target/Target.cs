@@ -5,34 +5,23 @@ using Enums;
 
 public abstract class Target : MonoBehaviour
 {
-    public float minE = 0, maxE = 100, minI = 0, maxI = 100;
+    [SerializeField, Range(0,100)]
+    protected float minE, maxE, minI, maxI;
 
-    [SerializeField] protected float expectation;
-
-    [SerializeField] protected float interest;
+    //[SerializeField]
+    protected float expectation;
+    //[SerializeField]
+    protected float interest;
 
     [SerializeField] protected TargetTraits traits;
     //private EChick chick;
 
-    public float Interest { get => interest; 
-        private set {
-            float i = value;
-            Debug.Log("Entra: " + i);
-            interest = CheckLimits(i, minI, maxI);
-            Debug.Log("Sale: " + interest);
-        } 
-    }
-    public float Expectation { get => expectation; 
-        private set {
-            float e = value;
-            Debug.Log("Entra E: " + e);
-            expectation = CheckLimits(value, minE, maxE);
-            Debug.Log("Sale E: " + e);
-        } 
-    }
+    public float Interest { get => interest; private set { interest = CheckLimits(value, minI, maxI); } }
+    public float Expectation { get => expectation; private set { expectation = CheckLimits(value, minE, maxE); } }
+
     private void Awake()
     {
-        Begin(5, 1000);
+        Begin(500, 10);
     }
 
     protected virtual void Begin(float e, float i)

@@ -333,8 +333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4173c784b07a3114fabf2b08688651fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expectation: 0
-  interest: 100
+  minE: 70
+  maxE: 100
+  minI: 55
+  maxI: 80
   traits:
     preffered: 0
     disliked: 0
