@@ -11,7 +11,8 @@ namespace Enums
         Intelligence,
         Intimacy,
         Afecction,
-        Boorish
+        Boorish,
+        none
     }
 
     public enum EChicks
