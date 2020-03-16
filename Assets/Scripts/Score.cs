@@ -62,10 +62,17 @@ public class Score : MonoBehaviour
                     if (GameManager.Instance.Tg.Preffered==trate)
                     {
                         tempScore = addition * 0.2f;
+                        score += addition + tempScore;
+
+                    }
+                    if (GameManager.Instance.Tg.Disliked==trate)
+                    {
+                        tempScore = addition * 0.45f;
+                        
+                        score += tempScore;
 
                     }
 
-                    score += addition + tempScore;
 
                     break;
                 case EChicks.Basica:
@@ -74,10 +81,26 @@ public class Score : MonoBehaviour
                     if (GameManager.Instance.Tg.Preffered==trate)
                     {
                         tempScore = addition * 0.4f;
+                        score += addition + tempScore;
+
+                    }
+                    if (GameManager.Instance.Tg.Disliked==trate)
+                    {
+                        tempScore = addition * 0.45f;
+                        
+                        score += tempScore;
+
+                    }
+                    if (GameManager.Instance.Tg.Hated==trate)
+                    {
+                        float tmpInterest = GameManager.Instance.Tg.Interest;
+                        tempScore = addition * 0.45f;
+                        score += tempScore;
+                        GameManager.Instance.Tg.RestInterest(tmpInterest*0.2f);
 
                     }
 
-                    score += addition + tempScore;
+                   
 
 
                     break;
