@@ -6,17 +6,6 @@ using Enums;
 
 public class Fresa : Target, IFresaInter
 {
-    /*
-    private void Awake()
-    {
-        minE = 70;
-        maxE = 100;
-
-        minI = 55;
-        maxI = 80;
-    }
-    */
-
     protected override void Begin(float e, float i)
     {
         base.Begin(e, i);

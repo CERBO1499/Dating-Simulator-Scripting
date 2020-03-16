@@ -5,17 +5,6 @@ using Enums;
 
 public class Hater : Target, IHaterInter
 {
-    /*
-    private void Awake()
-    {
-        minE = 55;
-        maxE = 80;
-
-        minI = 10;
-        maxI = 30;
-    }
-    */
-
     protected override void Begin(float e, float i)
     {
         base.Begin(e, i);
