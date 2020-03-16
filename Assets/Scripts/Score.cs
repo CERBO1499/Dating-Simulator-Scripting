@@ -17,8 +17,12 @@ public class Score : MonoBehaviour
     
 
 
-    public int _affection,addition, expectation;
+    public float _affection,addition, expectation;
     public float score, winScore, tempScore;
+
+    private int tmpCount;
+    [SerializeField] private int UmbralCount=5;
+    [SerializeField] private int UmbralMaxCount=10;
     
 
     // Start is called before the first frame update
@@ -54,6 +58,7 @@ public class Score : MonoBehaviour
         EChicks girl=cambioEscena.Instance.TipoChica;
         if (trate == Etrait.Love || trate == Etrait.Filrt || trate == Etrait.Intelligence)
         {
+           
             switch (girl)
             {
                 case EChicks.Fresa:
@@ -96,7 +101,7 @@ public class Score : MonoBehaviour
                         float tmpInterest = GameManager.Instance.Tg.Interest;
                         tempScore = addition * 0.45f;
                         score += tempScore;
-                        GameManager.Instance.Tg.RestInterest(tmpInterest*0.2f);
+                        GameManager.Instance.Tg.RestInterest(tmpInterest*0.02f);
 
                     }
 
@@ -124,6 +129,24 @@ public class Score : MonoBehaviour
         if (trate == Etrait.Intimacy)
         {
             GameManager.Instance.Tg.Interest += 2;
+        }
+
+        if (trate == Etrait.Afecction)
+        {
+            tmpCount++;
+            if (tmpCount >= UmbralCount && tmpCount<=UmbralMaxCount)
+            {
+                addition += addition * 0.05f;
+            }
+            
+        }
+
+        if (trate == Etrait.Boorish)
+        {
+            float tmpInterest = GameManager.Instance.Tg.Interest;
+            addition -= addition * 0.75f;
+            GameManager.Instance.Tg.RestInterest(tmpInterest*0.05f);
+            
         }
 
        
