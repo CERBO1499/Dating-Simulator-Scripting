@@ -18,6 +18,8 @@ public abstract class Target : MonoBehaviour
     protected float interest;
 
     [SerializeField] protected TargetTraits traits;
+
+    [SerializeField] private float puntajeInterest;
     //private EChick chick;
 
     public float Interest { get => interest; 
@@ -64,19 +66,18 @@ public abstract class Target : MonoBehaviour
         AssignTraits();
     }
 
-    public void AddInterest(float cant)
+    public void AddInterest(Etrait trait)
     {
-        Interest += cant;
+        if(trait==Etrait.Intimacy)
+        {
+            Interest += puntajeInterest;
+        }
+       
 
         ShowInterest();
     }
 
-    public void AddInterest()
-    {
-        Interest += 10;
-
-        ShowInterest();
-    }
+   
 
     public void RestInterest(float cant)
     {
