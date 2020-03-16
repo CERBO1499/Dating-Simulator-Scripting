@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
       if(instance!=null){Destroy(instance);}
 
       instance = this;
+      
+      
         chick = cambioEscena.Instance.TipoChica;
         SpawnTarget();
     }
@@ -44,20 +46,20 @@ public class GameManager : MonoBehaviour
         switch (chick)
         {
             case EChicks.Fresa:
-                tg = chicks[0].GetComponent<Fresa>();
-                Instantiate(chicks[0], targetPos.position, targetPos.rotation);
+                //tg = chicks[0].GetComponent<Fresa>();
+                tg=(Instantiate(chicks[0], targetPos.position, targetPos.rotation)).GetComponent<Fresa>();
+                tg.Begin(100,50);
+                
                 break;
 
             case EChicks.Basica:
-                tg = chicks[1].GetComponent<Basica>();
-
-                Instantiate(chicks[1], targetPos.position, targetPos.rotation);
+                tg=(Instantiate(chicks[0], targetPos.position, targetPos.rotation)).GetComponent<Basica>();
+                tg.Begin(50,50);
                 break;
 
             case EChicks.Toxica:
-                tg = chicks[2].GetComponent<Hater>();
-
-                Instantiate(chicks[2], targetPos.position, targetPos.rotation);
+                tg=(Instantiate(chicks[0], targetPos.position, targetPos.rotation)).GetComponent<Hater>();
+                tg.Begin(50,20);
                 break;
         }
     }

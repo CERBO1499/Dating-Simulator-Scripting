@@ -48,12 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minE: 66
   maxE: 100
-  minI: 33
+  minI: 0
   maxI: 66
   traits:
     preffered: 0
     disliked: 0
     hated: 0
+  puntajeInterest: 0
 --- !u!33 &1740025553184600396
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -117,11 +117,26 @@ public class Score : MonoBehaviour
 
                     break;
             }
+            
+            verifWinner();
+        }
+
+        if (trate == Etrait.Intimacy)
+        {
+            GameManager.Instance.Tg.Interest += 2;
         }
 
        
         // _puntaje += adición;
 
+    }
+
+    void verifWinner()
+    {
+        if (GameManager.Instance.Tg.Expectation == score)
+        {
+            cambioEscena.Instance.Ganaste();
+        }
     }
     void RestHate(Target target)
     {

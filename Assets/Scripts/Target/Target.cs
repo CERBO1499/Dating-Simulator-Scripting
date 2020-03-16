@@ -22,8 +22,9 @@ public abstract class Target : MonoBehaviour
     [SerializeField] private float puntajeInterest;
     //private EChick chick;
 
-    public float Interest { get => interest; 
-        private set 
+    public float Interest { 
+        get => interest; 
+         set 
         {
             //interest = value;
             interest = CheckLimits(value, minI, maxI);
@@ -38,10 +39,9 @@ public abstract class Target : MonoBehaviour
 
         BubbleKiller.InHurt += RestInterest;
 
-        Begin(500, 10);
     }
 
-    protected virtual void Begin(float e, float i)
+    public virtual void Begin(float e, float i)
     {
         Expectation = e;
         Interest = i;
@@ -54,7 +54,7 @@ public abstract class Target : MonoBehaviour
 
         ShowInterest();
     }
-    protected virtual void Begin(float e, float i, Etrait pref, Etrait dis, Etrait hate)
+    public virtual void Begin(float e, float i, Etrait pref, Etrait dis, Etrait hate)
     {
         expectation = CheckLimits(e, minE, maxE);
         interest = CheckLimits(i, minI, maxI);
