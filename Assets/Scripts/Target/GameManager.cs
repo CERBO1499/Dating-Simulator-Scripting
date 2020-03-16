@@ -53,12 +53,12 @@ public class GameManager : MonoBehaviour
                 break;
 
             case EChicks.Basica:
-                tg=(Instantiate(chicks[0], targetPos.position, targetPos.rotation)).GetComponent<Basica>();
+                tg=(Instantiate(chicks[1], targetPos.position, targetPos.rotation)).GetComponent<Basica>();
                 tg.Begin(50,50);
                 break;
 
             case EChicks.Toxica:
-                tg=(Instantiate(chicks[0], targetPos.position, targetPos.rotation)).GetComponent<Hater>();
+                tg=(Instantiate(chicks[2], targetPos.position, targetPos.rotation)).GetComponent<Hater>();
                 tg.Begin(50,20);
                 break;
         }
