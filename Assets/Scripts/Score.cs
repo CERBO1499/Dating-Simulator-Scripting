@@ -18,7 +18,8 @@ public class Score : MonoBehaviour
 
 
     public int _affection,addition, expectation;
-    public float score, winScore;
+    public float score, winScore, tempScore;
+    
 
     // Start is called before the first frame update
     private void Awake()
@@ -56,17 +57,46 @@ public class Score : MonoBehaviour
             switch (girl)
             {
                 case EChicks.Fresa:
-                    score *= (1 + 0.2F);    
+                    tempScore = 0;
+
+                    if (GameManager.Instance.Tg.Preffered==trate)
+                    {
+                        tempScore = addition * 0.2f;
+
+                    }
+
+                    score += addition + tempScore;
+
                     break;
                 case EChicks.Basica:
-                    score *= (1 - 0.4F);
+                    tempScore = 0;
+
+                    if (GameManager.Instance.Tg.Preffered==trate)
+                    {
+                        tempScore = addition * 0.4f;
+
+                    }
+
+                    score += addition + tempScore;
+
+
                     break;
                 case EChicks.Toxica:
-                    score *= (1 - 0.4F);                   
+                    tempScore = 0;
+
+                    if (GameManager.Instance.Tg.Hated==trate)
+                    {
+                        tempScore = addition * 0.4f;
+
+                    }
+
+                    score += addition - tempScore;
+
                     break;
             }
         }
-     
+
+       
         // _puntaje += adición;
 
     }

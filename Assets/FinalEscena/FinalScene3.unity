@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 410491623}
   - component: {fileID: 410491625}
   - component: {fileID: 410491624}
+  - component: {fileID: 410491626}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -552,6 +553,27 @@ MonoBehaviour:
   - {fileID: 1740025553184600435, guid: 1c4a015def4428149a5120d1b19d0891, type: 3}
   - {fileID: 8626650621692859665, guid: 64b804cf38530a44889952f56bef1e8a, type: 3}
   - {fileID: 6240560334379036881, guid: f0817d2134a62a0479c96e5545184a43, type: 3}
+--- !u!114 &410491626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410491622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f86beb73ddb1840b3a8ba1e2290366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntaje: {fileID: 200765893}
+  puntajeGanar: {fileID: 1567454701}
+  affection: {fileID: 1541859031}
+  _affection: 0
+  addition: 2
+  expectation: 50
+  score: 0
+  winScore: 0
+  tempScore: 0
 --- !u!1 &434010535
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +796,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1091501388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 649.22003
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 229.64038
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31.725159
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794773086848800706, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499124522152331313, guid: 056f91ad7efb8554999cc142eea828ea,
+        type: 3}
+      propertyPath: m_Name
+      value: ManagerScene
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 056f91ad7efb8554999cc142eea828ea, type: 3}
 --- !u!1 &1154646515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6448,14 +6539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f346d01e6d9375741bfc3c998e74aa78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntaje: {fileID: 200765893}
-  puntajeGanar: {fileID: 1567454701}
-  affection: {fileID: 1541859031}
-  interest: {fileID: 0}
-  _puntaje: 4
-  _puntajeGanar: 0
-  _affection: 0
-  "adici\xF3n": 0
 --- !u!1001 &9030975917742331997
 PrefabInstance:
   m_ObjectHideFlags: 0

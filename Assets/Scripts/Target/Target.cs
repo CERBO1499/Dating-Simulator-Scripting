@@ -117,7 +117,7 @@ public abstract class Target : MonoBehaviour
         Hated = traits.hated;
     }
 
-    private Etrait Preffered { get; set; }
-    private Etrait Disliked { get; set; }
-    private Etrait Hated { get; set; }
+    public Etrait Preffered { get; set; }
+    public Etrait Disliked { get; set; }
+    public Etrait Hated { get; set; }
 }
