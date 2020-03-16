@@ -202,7 +202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 327130948}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6964863779054638224, guid: 056f91ad7efb8554999cc142eea828ea,
+          type: 3}
+        m_MethodName: LaFresa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &327130948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,7 +398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: la hater
+  m_text: la toxica
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d1a711798d77f14a9e740c6c170d5e9, type: 2}
   m_sharedMaterial: {fileID: -8242260093573612083, guid: 2d1a711798d77f14a9e740c6c170d5e9,
@@ -456,7 +468,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 434049100}
-    characterCount: 8
+    characterCount: 9
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -870,7 +882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1420803541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6964863779054638224, guid: 056f91ad7efb8554999cc142eea828ea,
+          type: 3}
+        m_MethodName: LaToxica
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1420803541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +1168,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1518141271}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6964863779054638224, guid: 056f91ad7efb8554999cc142eea828ea,
+          type: 3}
+        m_MethodName: LaBasica
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1518141271
 MonoBehaviour:
   m_ObjectHideFlags: 0

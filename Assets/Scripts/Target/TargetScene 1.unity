@@ -333,6 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4173c784b07a3114fabf2b08688651fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   minE: 70
   maxE: 100
   minI: 55
@@ -341,6 +342,10 @@ MonoBehaviour:
     preffered: 0
     disliked: 0
     hated: 0
+=======
+  expectation: 0
+  interest: 0
+>>>>>>> EsceneManager
 --- !u!1 &172528187
 GameObject:
   m_ObjectHideFlags: 0

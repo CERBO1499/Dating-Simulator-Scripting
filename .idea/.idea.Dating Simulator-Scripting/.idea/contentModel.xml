@@ -21,6 +21,7 @@
               <e p="SpawnProbability.cs" t="Include" />
             </e>
           </e>
+          <e p="cambioEscena.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="InputHandler.cs" t="Include" />
             <e p="Player" t="Include">

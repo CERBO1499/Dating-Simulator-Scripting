@@ -99,7 +99,8 @@ public abstract class Target : MonoBehaviour
     public void Lose()
     {
         InLost(true);
-        UIMan.Instance.LoseOn(true);
+       // UIMan.Instance.LoseOn(true);
+       cambioEscena.Instance.GameOver();
     }
 
     private float CheckLimits(float val, float min, float max)

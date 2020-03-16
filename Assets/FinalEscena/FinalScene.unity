@@ -6437,11 +6437,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9030975916838085084, guid: 8b683e140e4edea4c8f2c5bf17f5f2df,
         type: 3}
+<<<<<<< HEAD
       propertyPath: traits.Array.size
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9030975916838085084, guid: 8b683e140e4edea4c8f2c5bf17f5f2df,
         type: 3}
+=======
+>>>>>>> EsceneManager
       propertyPath: traits.Array.data[5]
       value: 0.3
       objectReference: {fileID: 0}
@@ -6450,10 +6453,13 @@ PrefabInstance:
       propertyPath: traits.Array.data[0]
       value: 0.15
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 9030975916838085084, guid: 8b683e140e4edea4c8f2c5bf17f5f2df,
         type: 3}
       propertyPath: traits.Array.data[6]
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> EsceneManager
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b683e140e4edea4c8f2c5bf17f5f2df, type: 3}

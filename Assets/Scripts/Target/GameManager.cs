@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         SpawnTarget();
+        chick = cambioEscena.Instance.TipoChica;
     }
 
     private void SpawnTarget()
