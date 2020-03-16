@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Enums;
 using UnityEngine;
 
 using UnityEngine.SceneManagement;
 
 public class cambioEscena : MonoBehaviour
 {
+    
 
     
     public void Menu()
     {
-
         SceneManager.LoadScene("Menu");
     }
 
