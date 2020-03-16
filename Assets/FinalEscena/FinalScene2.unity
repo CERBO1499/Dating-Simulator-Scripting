@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bfa2a79bdcab3f429bcd45eee3a1163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtDamage: 0
   Umbral: 5
 --- !u!54 &172528190
 Rigidbody:
