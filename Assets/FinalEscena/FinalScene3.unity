@@ -534,7 +534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interestTxt: {fileID: 434010537}
-  loseImg: {fileID: 0}
 --- !u!114 &410491625
 MonoBehaviour:
   m_ObjectHideFlags: 0
