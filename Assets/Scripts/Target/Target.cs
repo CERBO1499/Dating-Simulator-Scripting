@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Enums;
+using Bubbles;
+using System;
 
 public abstract class Target : MonoBehaviour
 {
+    public static event Action<bool> InLost;
+
     [SerializeField, Range(0,100)]
     protected float minE, maxE, minI, maxI;
 
@@ -16,11 +20,22 @@ public abstract class Target : MonoBehaviour
     [SerializeField] protected TargetTraits traits;
     //private EChick chick;
 
-    public float Interest { get => interest; private set { interest = CheckLimits(value, minI, maxI); } }
+    public float Interest { get => interest; 
+        private set 
+        {
+            //interest = value;
+            interest = CheckLimits(value, minI, maxI);
+        } 
+    }
+
     public float Expectation { get => expectation; private set { expectation = CheckLimits(value, minE, maxE); } }
 
     private void Awake()
     {
+        Bubble.InBubblePop += AddInterest;
+
+        BubbleKiller.InHurt += RestInterest;
+
         Begin(500, 10);
     }
 
@@ -56,11 +71,20 @@ public abstract class Target : MonoBehaviour
         ShowInterest();
     }
 
-    public void RestInterest(float cant)
+    public void AddInterest()
     {
-        Interest -= cant;
+        Interest += 10;
 
         ShowInterest();
+    }
+
+    public void RestInterest(float cant)
+    {
+        interest -= cant;
+
+        ShowInterest();
+
+        if (Interest <= 0) Lose();
     }
 
     private void ShowInterest()
@@ -74,7 +98,8 @@ public abstract class Target : MonoBehaviour
     }
     public void Lose()
     {
-        
+        InLost(true);
+        UIMan.Instance.LoseOn(true);
     }
 
     private float CheckLimits(float val, float min, float max)

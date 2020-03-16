@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIMan : MonoBehaviour
 {
@@ -21,14 +22,27 @@ public class UIMan : MonoBehaviour
     {
         if (instance != null) Destroy(instance);
         instance = this;
+
+        Inicializar();
     }
     //  SINGLETON
 
     [SerializeField] TextMeshProUGUI interestTxt;
-    
+
+    [SerializeField] RawImage loseImg;
+
+    public void Inicializar()
+    {
+        LoseOn(false);
+    }
 
     public void ShowInterest(float inter)
     {
         interestTxt.text = ("INTEREST: " + inter.ToString());
+    }
+
+    public void LoseOn(bool state)
+    {
+        loseImg.gameObject.SetActive(state);
     }
 }

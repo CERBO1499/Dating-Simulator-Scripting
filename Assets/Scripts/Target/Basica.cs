@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Enums;
 
-public class Basica : Target, IBasicaInter
+public class Basica : Target, IFresaInter, IHaterInter
 {
     /*
     private void Awake()

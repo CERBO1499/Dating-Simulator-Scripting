@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class BubbleKiller : MonoBehaviour
 {
+    [SerializeField] private float hurtDamage;
+
+    public static event Action<float> InHurt;
 
     private int countLose;
     [SerializeField] private int Umbral;
@@ -30,12 +33,13 @@ public class BubbleKiller : MonoBehaviour
 
             if (bl.Trait == Etrait.Love || bl.Trait == Etrait.Intelligence || bl.Trait == Etrait.Filrt)
             {
-                print(bl.Trait);
+                Debug.Log("Este es el trato: " + bl.Trait);
                 countLose++;
                 if (countLose >= Umbral)
                 {
                     parSys.Play();
-                    print("Qiotando vida");
+                    InHurt(hurtDamage);
+                    Debug.Log("Qiotando vida");
                     //Quite vida
                 }
             }

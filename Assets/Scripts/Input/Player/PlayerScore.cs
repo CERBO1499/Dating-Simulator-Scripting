@@ -36,12 +36,14 @@ public class PlayerScore : MonoBehaviour
         adición = 2;
         
     }
+
     void Update()
     {
         puntaje.text = "Puntaje: " + _puntaje.ToString();
         puntajeGanar.text = "Para Ganar: " + _puntajeGanar.ToString();
         affection.text = "Affection: " + _affection.ToString();
     }
+
     void SumarPuntaje()
     {      
         _puntaje += adición;

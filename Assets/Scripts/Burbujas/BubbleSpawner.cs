@@ -8,6 +8,8 @@ using Random = UnityEngine.Random;
 
 public class BubbleSpawner : MonoBehaviour
 {
+    private bool pause;
+
     private PoolBubbles pool;
     private SpawnProbability probabilities;
    [SerializeField] private float speedBubbles;
@@ -28,8 +30,12 @@ public class BubbleSpawner : MonoBehaviour
 
     private void Awake()
     {
+        Target.InLost += PauseOn;
+
         pool = GetComponent<PoolBubbles>();
         probabilities = GetComponent<SpawnProbability>();
+
+        pause = false;
     }
 
 
@@ -40,29 +46,32 @@ public class BubbleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        timerIncreases += Time.deltaTime;
-        
-        if (timerIncreases >= timeIncrease && increasesRealice<maxIncreases)
+        if(!pause)
         {
-            float tmp = (timeBetwnspawns * 3) / 100;
-            timeBetwnspawns = timeBetwnspawns - tmp;
+            timer += Time.deltaTime;
+            timerIncreases += Time.deltaTime;
+
+            if (timerIncreases >= timeIncrease && increasesRealice < maxIncreases)
+            {
+                float tmp = (timeBetwnspawns * 3) / 100;
+                timeBetwnspawns = timeBetwnspawns - tmp;
 
 
-            float tmpSpeed = (speedBubbles * 3) / 100;
-            speedBubbles = speedBubbles + tmpSpeed;
+                float tmpSpeed = (speedBubbles * 3) / 100;
+                speedBubbles = speedBubbles + tmpSpeed;
 
 
 
 
-            increasesRealice++;
-            timerIncreases = 0;
-        }
-        if (timer >= timeBetwnspawns)
-        {
-            probability = probabilities.EvaluateProbability();
-            SpawnAtRandomPos(probability);
-            timer = 0;
+                increasesRealice++;
+                timerIncreases = 0;
+            }
+            if (timer >= timeBetwnspawns)
+            {
+                probability = probabilities.EvaluateProbability();
+                SpawnAtRandomPos(probability);
+                timer = 0;
+            }
         }
     }
 
@@ -99,5 +108,10 @@ public class BubbleSpawner : MonoBehaviour
         refer.SetActive(true);
 
         //Debug.Log(trait);
+    }
+
+    public void PauseOn(bool state)
+    {
+        pause = state;
     }
 }
