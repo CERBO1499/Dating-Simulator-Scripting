@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FinalEscena/Menu.unity
     guid: 1ec86fac57a206445bf805e95641b352
-  - enabled: 1
+  - enabled: 0
     path: Assets/FinalEscena/FinalScene.unity
     guid: 109276ff35237b74890d769c7327eeea
   - enabled: 1
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FinalEscena/ganaste.unity
     guid: 25534ecedba88c5409f21e7cfe99182d
+  - enabled: 1
+    path: Assets/FinalEscena/FinalScene3.unity
+    guid: 7a838d40311650a41a215defdfe6ddfb
   m_configObjects: {}
