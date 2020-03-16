@@ -39,12 +39,18 @@ public class cambioEscena : MonoBehaviour
         instance = this;
 
         tipoChica = EChicks.Basica;
-        
+        //tipoChic = tipoChica;
+        //a = 0;
+
         DontDestroyOnLoad(gameObject);
     }
 
-    [SerializeField]private EChicks tipoChica;
-    
+    [SerializeField] public EChicks tipoChica;
+
+    //[SerializeField] public int a;
+
+    //public static EChicks tipoChica;
+
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
@@ -66,18 +72,21 @@ public class cambioEscena : MonoBehaviour
        
     public void LaFresa()
     {
-        tipoChica = EChicks.Fresa;
-
-        SceneManager.LoadScene("FinalScene3");
+        Instance.Cambiar(EChicks.Fresa);
     }
     public void LaBasica()
     {
-        tipoChica = EChicks.Basica;
-        SceneManager.LoadScene("FinalScene3");
+        Instance.Cambiar(EChicks.Basica);
     }
     public void LaToxica()
     {
-        tipoChica = EChicks.Toxica;
+        Instance.Cambiar(EChicks.Toxica);
+    }
+
+    public void Cambiar(EChicks chick)
+    {
+        tipoChica = chick;
+
         SceneManager.LoadScene("FinalScene3");
     }
 }
