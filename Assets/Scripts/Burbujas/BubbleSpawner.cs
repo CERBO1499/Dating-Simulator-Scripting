@@ -77,35 +77,56 @@ public class BubbleSpawner : MonoBehaviour
 
     void SpawnAtRandomPos(int index)
     {
-        Etrait trait=Etrait.Boorish;
+        bool Sisepudo=false;
+        
+        Etrait trait=Etrait.none;
         
         GameObject refer = pool.Allocate(index);
         switch (probability)
         {
             case 0:
                 trait = Etrait.Filrt;
+                Sisepudo = true;
                 break;
             case 1:
                 trait = Etrait.Love;
+                Sisepudo = true;
                 break;
             case 2:
                 trait = Etrait.Intelligence;
+                Sisepudo = true;
                 break;
             case 3:
                 trait = Etrait.Intimacy;
+                Sisepudo = true;
                 break;
             case 4:
                 trait = Etrait.Afecction;
+                Sisepudo = true;
                 break;
             case 5:
                 trait = Etrait.Boorish;
+                Sisepudo = true;
+                break;
+            default:
                 break;
         }
-        refer.GetComponent<Bubble>().Begin(trait,speedBubbles);
         
-        refer.transform.position = transform.position + transform.right * Random.Range(xValue, xValue2);
-        refer.GetComponent<Renderer>().enabled = true;
-        refer.SetActive(true);
+        
+        
+        
+        
+ 
+        if(Sisepudo==true)
+        {
+            refer.GetComponent<Bubble>().Begin(trait,speedBubbles);
+        
+            refer.transform.position = transform.position + transform.right * Random.Range(xValue, xValue2);
+            refer.GetComponent<Renderer>().enabled = true;
+            refer.SetActive(true);
+        }
+        
+        
 
         //Debug.Log(trait);
     }
